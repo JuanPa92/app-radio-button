@@ -3,6 +3,7 @@ package com.example.appradiobutton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -26,4 +27,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Metodo para el boton calcular
+    public void calcular(View view){
+        String valor1String = et1.getText().toString();
+        String valor2String = et2.getText().toString();
+
+        int valor1Int = Integer.parseInt(valor1String);
+        int valor2Int = Integer.parseInt(valor2String);
+
+        if (rb1.isChecked()){
+            int suma = valor1Int + valor2Int;
+            String resultado = String.valueOf(suma);
+            tv1.setText(resultado);
+        } else if (rb2.isChecked()){
+            int resta = valor1Int - valor2Int;
+            String resultado = String.valueOf(resta);
+            tv1.setText(resultado);
+        }
+    }
 }
