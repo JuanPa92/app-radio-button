@@ -47,6 +47,7 @@
             android:id="@+id/rbSumar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/rb_add" />
 
         <RadioButton
@@ -54,6 +55,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/rb_substract" />
+
+        <RadioButton
+            android:id="@+id/rbMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_multiply" />
+
+        <RadioButton
+            android:id="@+id/rbDividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_divide" />
     </RadioGroup>
 
     <Button
